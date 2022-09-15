@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
-        Title="RegistrovanjePacijenta" Height="450" Width="800">
-    <Grid>
-        
+        Title="RegistrovanjePacijenta" Height="420" Width="400"  Closed="Window_Closed">
+    <Grid Margin="0,0,10,5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Registrovanje pacijenta" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Ime :" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="ImeTextBox" HorizontalAlignment="Left" Margin="54,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" FontSize="16"/>
+        <Label Content="Prezime :" HorizontalAlignment="Left" Margin="15,120,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="PrezimeTextBox" HorizontalAlignment="Left" Margin="89,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" FontSize="16"/>
+        <Label Content="Krvna grupa :" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Potrebna kolicina :" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" FontSize="16" Width="144"/>
+        <TextBox x:Name="KolicinaKrviTextBox" HorizontalAlignment="Left" Margin="154,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
+        <Button x:Name="RegistrovanjePacijentaBtn" Content="Registruj" HorizontalAlignment="Left" Margin="108,311,0,0" VerticalAlignment="Top" Width="200" Height="65" FontSize="20" Click="RegistrovanjePacijentaBtn_Click"/>
+        <ComboBox x:Name="KrvnaGrupaComboBox" HorizontalAlignment="Left" Margin="114,164,0,0" VerticalAlignment="Top" Width="242"/>
+
     </Grid>
+
+
 </Window>
