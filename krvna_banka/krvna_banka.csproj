@@ -56,12 +56,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BrisanjeNaloga.xaml.cs">
+      <DependentUpon>BrisanjeNaloga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Donacija.xaml.cs">
+      <DependentUpon>Donacija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PregledDonora.xaml.cs">
+      <DependentUpon>PregledDonora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PregledPacijenta.xaml.cs">
+      <DependentUpon>PregledPacijenta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PrikazKorisnika.xaml.cs">
       <DependentUpon>PrikazKorisnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrovanjeDonora.xaml.cs">
+      <DependentUpon>RegistrovanjeDonora.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegistrovanjeKorisnika.xaml.cs">
       <DependentUpon>RegistrovanjeKorisnika.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RegistrovanjePacijenta.xaml.cs">
+      <DependentUpon>RegistrovanjePacijenta.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BrisanjeNaloga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Donacija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GlavniOpcioniMeni.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -82,11 +108,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PregledDonora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PregledPacijenta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PrikazKorisnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="RegistrovanjeDonora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegistrovanjeKorisnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegistrovanjePacijenta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

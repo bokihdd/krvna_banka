@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
-        Title="GlavniOpcioniMeni" Height="450" Width="800">
+        Title="GlavniOpcioniMeni" Height="500" Width="400" Closed="Window_Closed">
     <Grid>
-        
+        <Button x:Name="RegistrujDonoraButton" Content="Registruj donora" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="300" Height="40" FontSize="16" Click="RegistrujDonoraButton_Click"/>
+        <Button x:Name="IzlogujSeButton" Content="Izloguj se" HorizontalAlignment="Center" Margin="0,384,0,0" VerticalAlignment="Top" Width="300" Height="40" FontSize="16" Click="IzlogujSeButton_Click"/>
+        <Button x:Name="ObrisiNalogButton" Content="Obrisi nalog" HorizontalAlignment="Center" Margin="0,339,0,0" VerticalAlignment="Top" Width="300" Height="40" FontSize="16" Click="ObrisiNalogButton_Click"/>
+        <Button x:Name="PregledDonoraButton" Content="Pregled donora" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="300" Height="40" FontSize="16" Click="PregledDonoraButton_Click"/>
+        <Button x:Name="btnRegPacijenta" Content="Registruj pacijenta" HorizontalAlignment="Center" Height="40" Margin="0,55,0,0" VerticalAlignment="Top" Width="300" FontSize="16" Click="btnRegPacijenta_Click"/>
+        <Button x:Name="PregledPacijenataButton_Copy" Content="Pregled pacijenata" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="300" Height="40" FontSize="16" Click="PregledPacijenataButton_Copy_Click"/>
+        <Button x:Name="btnDonacija" Content="Izvrsi donaciju" HorizontalAlignment="Center" Height="38" Margin="0,190,0,0" VerticalAlignment="Top" Width="300" FontSize="16" Click="btnDonacija_Click"/>
+
     </Grid>
 </Window>
