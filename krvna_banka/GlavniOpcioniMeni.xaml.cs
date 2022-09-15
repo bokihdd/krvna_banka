@@ -77,5 +77,12 @@ namespace krvna_banka
             this.Hide();
             MainWindow.Show();
         }
+
+        private void PrikazInventaraButton_Click(object sender, RoutedEventArgs e)
+        {
+            var PrikazInventara = new PrikazInventara();
+            this.Hide();
+            PrikazInventara.Show();
+        }
     }
 }

@@ -14,6 +14,7 @@
         <Button x:Name="btnRegPacijenta" Content="Registruj pacijenta" HorizontalAlignment="Center" Height="40" Margin="0,55,0,0" VerticalAlignment="Top" Width="300" FontSize="16" Click="btnRegPacijenta_Click"/>
         <Button x:Name="PregledPacijenataButton_Copy" Content="Pregled pacijenata" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="300" Height="40" FontSize="16" Click="PregledPacijenataButton_Copy_Click"/>
         <Button x:Name="btnDonacija" Content="Izvrsi donaciju" HorizontalAlignment="Center" Height="38" Margin="0,190,0,0" VerticalAlignment="Top" Width="300" FontSize="16" Click="btnDonacija_Click"/>
+        <Button x:Name="PrikazInventaraButton" Content="Prikaz Inventara" HorizontalAlignment="Center" Height="38" Margin="0,233,0,0" VerticalAlignment="Top" Width="300" FontSize="16" Click="PrikazInventaraButton_Click"/>
 
     </Grid>
 </Window>
