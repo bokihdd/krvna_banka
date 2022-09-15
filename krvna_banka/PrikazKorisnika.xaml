@@ -1,0 +1,41 @@
+﻿<Window x:Class="krvna_banka.PrikazKorisnika"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:krvna_banka"
+        mc:Ignorable="d"
+        Title="PrikazKorisnika"  Height="300" Width="667" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid>
+        <Label Content="Ime :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="ImeTextBox" HorizontalAlignment="Left" Margin="59,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="16"/>
+        <Label Content="Prezime :" HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="PrezimeTextBox" HorizontalAlignment="Left" Margin="295,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150
+                 " FontSize="16"/>
+        <Button x:Name="PretraziButton" Content="Pretrazi" HorizontalAlignment="Left" Margin="472,10,0,0" VerticalAlignment="Top" Height="31" Width="79" FontSize="16" Click="PretraziButton_Click"/>
+        <Button x:Name="OsveziButton" Content="Osvezi" HorizontalAlignment="Left" Margin="568,10,0,0" VerticalAlignment="Top" Height="31" Width="79" FontSize="16" Click="OsveziButton_Click"/>
+        <DataGrid ItemsSource="{Binding }" x:Name="ListaKorisnikaDataGrid" Margin="0,46,0,0" Loaded="Window_Loaded" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header ="Id" Width="*" Binding="{Binding idKorisnika}"/>
+                <DataGridTextColumn Header ="Ime" Width="*" Binding="{Binding Ime}"/>
+                <DataGridTextColumn Header ="Prezime" Width="*" Binding="{Binding Prezime}"/>
+                <DataGridTextColumn Header ="E-mail" Width="*" Binding="{Binding Email}"/>
+
+            </DataGrid.Columns>
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Wheat"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+
+
+                </Style>
+            </DataGrid.Resources>
+
+
+
+        </DataGrid>
+
+    </Grid>
+</Window>
