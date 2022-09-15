@@ -68,6 +68,9 @@
     <Compile Include="PregledPacijenta.xaml.cs">
       <DependentUpon>PregledPacijenta.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PrikazInventara.xaml.cs">
+      <DependentUpon>PrikazInventara.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PrikazKorisnika.xaml.cs">
       <DependentUpon>PrikazKorisnika.xaml</DependentUpon>
     </Compile>
@@ -113,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PregledPacijenta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrikazInventara.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
