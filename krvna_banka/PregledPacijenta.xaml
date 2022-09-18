@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
-        Title="PregledPacijenta" Height="450" Width="800">
+        Title="PregledPacijenta" Height="300" Width="667" Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="dtGrid" HorizontalAlignment="Center" Height="181" Margin="0,33,0,0" VerticalAlignment="Top" Width="625" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Wheat"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+
+
+                </Style>
+            </DataGrid.Resources>
+
+
+
+        </DataGrid>
+
     </Grid>
 </Window>
