@@ -75,6 +75,11 @@ namespace krvna_banka
                 var queryResult1 = cmdSel.ExecuteNonQuery();
 
                 MessageBox.Show("Pacijent uspesno registrovan!");
+
+                ImeTextBox.Text = "";
+                PrezimeTextBox.Text = "";
+                KrvnaGrupaComboBox.SelectedIndex = -1;
+                KolicinaKrviTextBox.Text = "";
             }
         }
     }

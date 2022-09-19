@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
-        Title="Donacija" Height="450" Width="800">
+        Title="Donacija" Height="450" Width="1300" Closing="Window_Closing" Loaded="Window_Loaded">
     <Grid>
-        
+        <Label Content="Inventar" HorizontalAlignment="Left" Margin="91,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="A+ :" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="A- :" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="B+ :" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="B- :" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="AB+ :" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="AB- :" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="O+ :" HorizontalAlignment="Left" Margin="10,282,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="O- :" HorizontalAlignment="Left" Margin="10,318,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="BPTxt" HorizontalAlignment="Left" Margin="65,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" IsEnabled="False"/>
+        <TextBox x:Name="BMTxt" HorizontalAlignment="Left" Margin="65,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" IsEnabled="False"/>
+        <TextBox x:Name="ABPTxt" HorizontalAlignment="Left" Margin="65,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" IsEnabled="False"/>
+        <TextBox x:Name="AMTxt" HorizontalAlignment="Left" Margin="65,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" IsEnabled="False"/>
+        <TextBox x:Name="APTxt" HorizontalAlignment="Left" Margin="65,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" IsEnabled="False"/>
+        <TextBox x:Name="ABMTxt" HorizontalAlignment="Left" Margin="65,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" IsEnabled="False"/>
+        <TextBox x:Name="OPTxt" HorizontalAlignment="Left" Margin="65,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" IsEnabled="False"/>
+        <TextBox x:Name="OMTxt" HorizontalAlignment="Left" Margin="65,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" IsEnabled="False"/>
+        <DataGrid x:Name="PacijentiDataGrid" HorizontalAlignment="Left" Height="275" Margin="245,74,0,0" VerticalAlignment="Top" Width="488" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="PacijentiDataGrid_SelectionChanged"/>
+        <Label Content="Pacijenti" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Podaci" HorizontalAlignment="Left" Margin="898,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="Ime" HorizontalAlignment="Left" Margin="846,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="16" IsEnabled="False"/>
+        <Label Content="Ime" HorizontalAlignment="Left" Margin="908,52,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Prezime" HorizontalAlignment="Left" Margin="893,114,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="Prezime" HorizontalAlignment="Left" Margin="846,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="16" IsEnabled="False"/>
+        <Label Content="Krvna Grupa" HorizontalAlignment="Left" Margin="878,173,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="KrvnaGrupa" HorizontalAlignment="Left" Margin="846,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="16" IsEnabled="False"/>
+        <Label Content="Kolicina Krvi" HorizontalAlignment="Left" Margin="879,237,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="KolicinaKrvi" HorizontalAlignment="Left" Margin="847,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="16" IsEnabled="False"/>
+        <Label Content="Datum Donacije" HorizontalAlignment="Left" Margin="865,302,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="DatumDonacije" HorizontalAlignment="Left" Margin="816,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" FontSize="16" IsEnabled="False" Height="25"/>
+        <Button x:Name="IzvrsiDonacijuButton" Content="Izvrsi Donaciju" HorizontalAlignment="Left" Margin="1056,0,0,0" VerticalAlignment="Center" Width="206" Height="74" FontSize="20" Click="IzvrsiDonacijuButton_Click"/>
     </Grid>
 </Window>
