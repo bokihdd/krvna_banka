@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="PrikazInventara" Height="450" Width="600" Closed="Window_Closed" Loaded="Window_Loaded">
     <Grid>
-        <DataGrid x:Name="dtGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,89,0,93">
+        <DataGrid x:Name="dtGrid" d:ItemsSource="{d:SampleData ItemCount=5}"  VerticalAlignment="Top" CanUserAddRows="False" ColumnWidth="*" Margin="0,98,0,0">
         <DataGrid.Resources>
             <Style TargetType="{x:Type DataGridColumnHeader}">
                 <Setter Property="Background" Value="Wheat"/>

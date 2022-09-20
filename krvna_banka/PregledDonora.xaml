@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="PregledDonora" Height="300" Width="667" Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="dtGrid" HorizontalAlignment="Center" Height="181" Margin="0,33,0,0" VerticalAlignment="Top" Width="625" d:ItemsSource="{d:SampleData ItemCount=5}">
+        <DataGrid x:Name="dtGrid" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" Width="610"  CanUserAddRows="False" ColumnWidth="*" d:ItemsSource="{d:SampleData ItemCount=5}">
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Wheat"/>

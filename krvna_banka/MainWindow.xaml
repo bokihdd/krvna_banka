@@ -5,18 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400" Closed="Window_Closed">
-    <Grid>
-        <Label Content="Korisnicko Ime" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="KorisnickoIme" HorizontalAlignment="Center" Margin="0,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
-        <Label Content="Sifra" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="Sifra" HorizontalAlignment="Center" Margin="0,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
-        <Button x:Name="UlogujSeButton" Content="Uloguj se" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Margin="0,269,0,0" Height="30" FontSize="16" Click="UlogujSeButton_Click"/>
-        <Button x:Name="RegistrujSeButton" Content="Registruj se" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Margin="0,304,0,0" Height="30" FontSize="16" Click="RegistrujSeButton_Click"/>
-        <Button x:Name="PrikazKorisnikaButton" Content="Prikaz Korisnika" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Margin="0,339,0,0" Height="30" FontSize="16" Click="PrikazKorisnikaButton_Click"/>
-        <Label Content="Login Forma" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        
+        
+        
+        
+        Title="MainWindow" Height="480" Width="420" Closed="Window_Closed">
+    <Grid Background="White" Height="460" Width="400" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Korisnicko ime" HorizontalAlignment="Left" Margin="213,91,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Yu Gothic" FontWeight="Bold" Height="39" Width="140"/>
+        <TextBox x:Name="KorisnickoIme" HorizontalAlignment="Left" Margin="178,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16" Background="LightGray" Height="23" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Label Content="Sifra" HorizontalAlignment="Left" Margin="258,163,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Yu Gothic" FontWeight="Bold" RenderTransformOrigin="0.519,0.515" Height="39" Width="51"/>
+        <TextBox x:Name="Sifra" HorizontalAlignment="Left" Margin="178,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16" Background="LightGray" Height="23" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Button x:Name="UlogujSeButton" Content="Prijava" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="209,251,0,0" Height="30" FontSize="18" Click="UlogujSeButton_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Button x:Name="RegistrujSeButton" Content="Registracija" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="26,332,0,0" Height="30" FontSize="18" Click="RegistrujSeButton_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Button x:Name="PrikazKorisnikaButton" Content="Prikaz korisnika" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="224,332,0,0" Height="30" FontSize="18" Click="PrikazKorisnikaButton_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Label Content="Prijava korisnika" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Yu Gothic" FontWeight="Bold" Height="68" Width="302"/>
         <GridSplitter HorizontalAlignment="Center" Height="2" Margin="0,61,0,0" VerticalAlignment="Top" Width="400" Background="Black"/>
-        <Button x:Name="Izadji" Content="Izadji" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Margin="0,374,0,0" Height="30" FontSize="16" Click="Izadji_Click"/>
+        <Button x:Name="Izadji" Content="Izadji" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Margin="0,398,0,0" Height="30" FontSize="18" Click="Izadji_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Image x:Name="img" HorizontalAlignment="Left" Height="178" Margin="26,91,0,0" VerticalAlignment="Top" Width="147" Source="/kapkrvi.png" RenderTransformOrigin="0.453,0.531"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="1" Margin="0,302,0,0" VerticalAlignment="Top" Width="398"/>
 
     </Grid>
 </Window>

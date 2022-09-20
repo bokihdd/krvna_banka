@@ -46,6 +46,7 @@ namespace krvna_banka
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dtGrid.ItemsSource = dt.DefaultView;
+            
             sqlconn.Close();
 
         }

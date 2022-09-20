@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="RegistrovanjeKorisnika" Height="420" Width="400" Closed="Window_Closed">
     <Grid Margin="0,0,10,5">
         <Label Content="Registrovanje Korisnika" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20"/>

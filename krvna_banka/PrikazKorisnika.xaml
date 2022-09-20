@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="PrikazKorisnika"  Height="300" Width="667" Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
         <Label Content="Ime :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
