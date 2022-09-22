@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
+        Background="#FFDC9797"
         
         
         
         
         Title="MainWindow" Height="480" Width="420" Closed="Window_Closed">
-    <Grid Background="White" Height="460" Width="400" >
+    <Grid Background="#FFDC9797" Height="460" Width="400" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>

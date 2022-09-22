@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="PregledPacijenta" Height="300" Width="667" Loaded="Window_Loaded" Closed="Window_Closed">
+        Title="PregledPacijenta" Height="300" Width="667" Loaded="Window_Loaded" Closed="Window_Closed" Background="#FFDC9797">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="dtGrid" HorizontalAlignment="Center"  Margin="0,33,0,0" VerticalAlignment="Top" CanUserAddRows="False" ColumnWidth="*" Width="625" d:ItemsSource="{d:SampleData ItemCount=5}">
+        <DataGrid x:Name="dtGrid" HorizontalAlignment="Center"  Margin="0,97,0,0" VerticalAlignment="Top" CanUserAddRows="False" ColumnWidth="*" Width="625" d:ItemsSource="{d:SampleData ItemCount=5}">
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
-                    <Setter Property="Background" Value="Wheat"/>
+                    <Setter Property="Background" Value="#FFDC9797"/>
                     <Setter Property="FontWeight" Value="Bold"/>
                     <Setter Property="BorderThickness" Value="0,0,1,1"/>
                     <Setter Property="BorderBrush" Value="Black"/>
@@ -27,6 +27,8 @@
 
 
         </DataGrid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="2" Margin="0,54,0,0" VerticalAlignment="Top" Width="667"/>
+        <Label Content="Registrovani pacijenti" HorizontalAlignment="Left" Height="46" Margin="206,3,0,0" VerticalAlignment="Top" Width="395" FontFamily="Yu Gothic" FontSize="24" FontWeight="Bold"/>
 
     </Grid>
 </Window>

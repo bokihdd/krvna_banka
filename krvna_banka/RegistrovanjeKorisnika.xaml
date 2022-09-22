@@ -6,21 +6,24 @@
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="RegistrovanjeKorisnika" Height="420" Width="400" Closed="Window_Closed">
-    <Grid Margin="0,0,10,5">
-        <Label Content="Registrovanje Korisnika" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Ime :" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="ImeTextBox" HorizontalAlignment="Left" Margin="54,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" FontSize="16"/>
-        <Label Content="Prezime :" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="PrezimeTextBox" HorizontalAlignment="Left" Margin="89,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" FontSize="16"/>
-        <Label Content="E-mail adresa :" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Margin="128,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" FontSize="16"/>
-        <Label Content="Korisnicko ime :" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="16"/>
-        <TextBox x:Name="KorisnickoImeTextBox" HorizontalAlignment="Left" Margin="135,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" FontSize="16"/>
-        <Label Content="Sifra :" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="SifraTextBox" HorizontalAlignment="Left" Margin="64,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" FontSize="16"/>
-        <Button x:Name="RegistrujButton" Content="Registruj" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top" Width="200" Height="65" FontSize="20" Click="RegistrujButton_Click"/>
-        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="0,47,0,0" VerticalAlignment="Top" Width="401" Background="Black"/>
+        Title="RegistrovanjeKorisnika" Height="451" Width="500" Closed="Window_Closed"
+        Background="#FFDC9797">
+
+    <Grid Margin="5,0,5,9" Background="#FFDC9797">
+        <Label Content="Registrovanje korisnika" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Label Content="Ime " HorizontalAlignment="Left" Margin="227,62,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="ImeTextBox" HorizontalAlignment="Center" Margin="0,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
+        <Label Content="Prezime" HorizontalAlignment="Left" Margin="212,116,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="PrezimeTextBox" HorizontalAlignment="Center" Margin="0,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
+        <Label Content="E-mail adresa" HorizontalAlignment="Center" Margin="0,170,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="212" FontSize="16"/>
+        <Label Content="Korisnicko ime" HorizontalAlignment="Center" Margin="0,224,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontFamily="Yu Gothic"/>
+        <TextBox x:Name="KorisnickoImeTextBox" HorizontalAlignment="Center" Margin="0,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
+        <Label Content="Sifra " HorizontalAlignment="Left" Margin="225,283,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="SifraTextBox" HorizontalAlignment="Center" Margin="0,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
+        <Button x:Name="RegistrujButton" Content="Registruj" HorizontalAlignment="Left" Margin="166,367,0,0" VerticalAlignment="Top" Width="165" Height="31" FontSize="20" Click="RegistrujButton_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="2" Margin="0,52,0,0" VerticalAlignment="Top" Width="490"/>
+
 
     </Grid>
 </Window>

@@ -6,13 +6,15 @@
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="BrisanjeNaloga"  Height="350" Width="350" Closed="Window_Closed">
-        
-    <Grid>
-        <Label Content="Korisnicko ime" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="KorisnickoImeTextBox" HorizontalAlignment="Center" Margin="0,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontSize="16"/>
-        <Label Content="Sifra" HorizontalAlignment="Center" Margin="0,88,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="SifraTextBox" HorizontalAlignment="Center" Margin="0,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontSize="16"/>
-        <Button x:Name="ObrisiNalogButton" Content="Obrisi nalog" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="40" FontSize="16" Margin="0,225,0,0" Click="ObrisiNalogButton_Click"/>
+        Title="BrisanjeNaloga"  Height="323" Width="312" Closed="Window_Closed" Background="#FFDC9797">
+
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Korisnicko ime" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="KorisnickoImeTextBox" HorizontalAlignment="Center" Margin="0,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontSize="16"/>
+        <Label Content="Sifra" HorizontalAlignment="Center" Margin="0,129,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="SifraTextBox" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontSize="16"/>
+        <Button x:Name="ObrisiNalogButton" Content="Obrisi nalog" HorizontalAlignment="Center" VerticalAlignment="Top" Width="125" Height="40" FontSize="16" Margin="0,228,0,0" Click="ObrisiNalogButton_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="2" Margin="0,47,0,0" VerticalAlignment="Top" Width="312"/>
+        <Label Content="Brisanje naloga" HorizontalAlignment="Center" Height="38" Margin="0,9,0,0" VerticalAlignment="Top" Width="166" FontSize="20" FontFamily="Yu Gothic" FontWeight="Bold"/>
     </Grid>
 </Window>

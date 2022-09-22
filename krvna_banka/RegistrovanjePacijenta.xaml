@@ -6,21 +6,22 @@
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="RegistrovanjePacijenta" Height="420" Width="400"  Closed="Window_Closed">
-    <Grid Margin="0,0,10,5">
+        Title="RegistrovanjePacijenta" Height="420" Width="400"  Closed="Window_Closed" Background="#FFDC9797">
+    <Grid Margin="0,0,0,5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Registrovanje pacijenta" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Ime :" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="ImeTextBox" HorizontalAlignment="Left" Margin="54,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" FontSize="16"/>
-        <Label Content="Prezime :" HorizontalAlignment="Left" Margin="15,120,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="PrezimeTextBox" HorizontalAlignment="Left" Margin="89,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" FontSize="16"/>
-        <Label Content="Krvna grupa :" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="Potrebna kolicina :" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" FontSize="16" Width="144"/>
-        <TextBox x:Name="KolicinaKrviTextBox" HorizontalAlignment="Left" Margin="154,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
-        <Button x:Name="RegistrovanjePacijentaBtn" Content="Registruj" HorizontalAlignment="Left" Margin="108,311,0,0" VerticalAlignment="Top" Width="200" Height="65" FontSize="20" Click="RegistrovanjePacijentaBtn_Click"/>
-        <ComboBox x:Name="KrvnaGrupaComboBox" HorizontalAlignment="Left" Margin="114,164,0,0" VerticalAlignment="Top" Width="242"/>
+        <Label Content="Registrovanje pacijenta" HorizontalAlignment="Left" Margin="68,9,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Label Content="Ime " HorizontalAlignment="Left" Margin="187,69,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="ImeTextBox" HorizontalAlignment="Left" Margin="103,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
+        <Label Content="Prezime " HorizontalAlignment="Left" Margin="172,128,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="PrezimeTextBox" HorizontalAlignment="Left" Margin="103,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
+        <Label Content="Krvna grupa " HorizontalAlignment="Left" Margin="156,0,0,0" VerticalAlignment="Center" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Label Content="Potrebna kolicina" HorizontalAlignment="Left" Margin="136,242,0,0" VerticalAlignment="Top" FontSize="16" Width="144" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="KolicinaKrviTextBox" HorizontalAlignment="Left" Margin="102,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="16"/>
+        <Button x:Name="RegistrovanjePacijentaBtn" Content="Registruj" HorizontalAlignment="Left" Margin="128,340,0,0" VerticalAlignment="Top" Width="166" Height="39" FontSize="20" Click="RegistrovanjePacijentaBtn_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <ComboBox x:Name="KrvnaGrupaComboBox" HorizontalAlignment="Left" Margin="101,220,0,0" VerticalAlignment="Top" Width="214"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="2" Margin="0,62,0,0" VerticalAlignment="Top" Width="401"/>
 
     </Grid>
 

@@ -6,22 +6,27 @@
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="PrikazInventara" Height="450" Width="600" Closed="Window_Closed" Loaded="Window_Loaded">
-    <Grid>
-        <DataGrid x:Name="dtGrid" d:ItemsSource="{d:SampleData ItemCount=5}"  VerticalAlignment="Top" CanUserAddRows="False" ColumnWidth="*" Margin="0,98,0,0">
-        <DataGrid.Resources>
-            <Style TargetType="{x:Type DataGridColumnHeader}">
-                <Setter Property="Background" Value="Wheat"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-                <Setter Property="BorderThickness" Value="0,0,1,1"/>
-                <Setter Property="BorderBrush" Value="Black"/>
+        Title="PrikazInventara" Height="300" Width="600" Closed="Window_Closed" Loaded="Window_Loaded" Background="#FFDC9797">
+    <Grid Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dtGrid" d:ItemsSource="{d:SampleData ItemCount=5}"  VerticalAlignment="Center" CanUserAddRows="False" ColumnWidth="*">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#FFDC9797"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
 
 
-            </Style>
-        </DataGrid.Resources>
+                </Style>
+            </DataGrid.Resources>
 
 
 
         </DataGrid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="2" Margin="0,49,0,0" VerticalAlignment="Top" Width="600"/>
+        <Label Content="Inventar" HorizontalAlignment="Center" Height="44" VerticalAlignment="Top" Width="108" FontFamily="Yu Gothic" FontWeight="Bold" FontSize="24"/>
     </Grid>
 </Window>

@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:krvna_banka"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="PrikazKorisnika"  Height="300" Width="667" Loaded="Window_Loaded" Closed="Window_Closed">
+        Title="PrikazKorisnika"  Height="300" Width="667" Loaded="Window_Loaded" Closed="Window_Closed" Background="#FFDC9797">
     <Grid>
-        <Label Content="Ime :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Ime :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16" Background="{x:Null}" FontFamily="Yu Gothic" FontWeight="Bold"/>
         <TextBox x:Name="ImeTextBox" HorizontalAlignment="Left" Margin="59,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="16"/>
-        <Label Content="Prezime :" HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Prezime :" HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic" FontWeight="Bold"/>
         <TextBox x:Name="PrezimeTextBox" HorizontalAlignment="Left" Margin="295,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150
                  " FontSize="16"/>
-        <Button x:Name="PretraziButton" Content="Pretrazi" HorizontalAlignment="Left" Margin="472,10,0,0" VerticalAlignment="Top" Height="31" Width="79" FontSize="16" Click="PretraziButton_Click"/>
-        <Button x:Name="OsveziButton" Content="Osvezi" HorizontalAlignment="Left" Margin="568,10,0,0" VerticalAlignment="Top" Height="31" Width="79" FontSize="16" Click="OsveziButton_Click"/>
+        <Button x:Name="PretraziButton" Content="Pretrazi" HorizontalAlignment="Left" Margin="472,10,0,0" VerticalAlignment="Top" Height="31" Width="79" FontSize="16" Click="PretraziButton_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
+        <Button x:Name="OsveziButton" Content="Osvezi" HorizontalAlignment="Left" Margin="568,10,0,0" VerticalAlignment="Top" Height="31" Width="79" FontSize="16" Click="OsveziButton_Click" FontFamily="Yu Gothic" FontWeight="Bold"/>
         <DataGrid ItemsSource="{Binding }" x:Name="ListaKorisnikaDataGrid" Margin="0,46,0,0" Loaded="Window_Loaded" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header ="Id" Width="*" Binding="{Binding idKorisnika}"/>
@@ -25,7 +25,7 @@
             </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
-                    <Setter Property="Background" Value="Wheat"/>
+                    <Setter Property="Background" Value="#FFDC9797"/>
                     <Setter Property="FontWeight" Value="Bold"/>
                     <Setter Property="BorderThickness" Value="0,0,1,1"/>
                     <Setter Property="BorderBrush" Value="Black"/>
